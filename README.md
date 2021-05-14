@@ -25,5 +25,8 @@ dotnet ef --help
 Managing Client-Side Packages
 
 dotnet tool uninstall --global Microsoft.Web.LibraryManager.Cli  
-dotnet tool install --global Microsoft.Web.LibraryManager.Cli --version x.x.x  
+dotnet tool install --global Microsoft.Web.LibraryManager.Cli --version x.x.x
+
+libman init -p cdnjs  
+libman install twitter-bootstrap@[version] -d [project directory] wwwroot/lib/twitter-bootstrap
 
