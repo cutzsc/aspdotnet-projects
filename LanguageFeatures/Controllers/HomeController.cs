@@ -55,7 +55,8 @@ namespace LanguageFeatures.Controllers
 				new Product { Name = "Corner flag", Price = 34.95m },
 				null);
 
-			return View(cart.Products.Select(p => $"{nameof(p.Name)}: {p?.Name ?? "No Name"}"));
+			//return View(cart.Products.Select(p => $"{nameof(p.Name)}: {p?.Name ?? "No Name"}"));
+			return View(cart.Products);
 
 
 			//List<string> output = new List<string>();
